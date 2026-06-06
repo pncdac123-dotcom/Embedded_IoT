@@ -5,7 +5,6 @@
 #define GPIO_ENABLE_REG *((volatile uint32_t*)0x3FF44020)
 
 void setup() {
-  // put your setup code here, to run once:
   GPIO_ENABLE_REG |=(1<<LED_PIN);
 }
 
